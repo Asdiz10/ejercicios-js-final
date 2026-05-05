@@ -6,9 +6,21 @@
     <title>Ejercicio 4</title>
 </head>
 <body>
-    <input type="text">
-    <button>ENSEÑAMELO</button>
+    <input id="input" type="text">
+    <button id="boton">ENSEÑAMELO</button>
 
-    <div></div>
+    <div id="contenedor"></div>
+
+    <script>
+        let ipt = document.querySelector("#input")
+        let miDiv = document.querySelector("#contenedor")
+        const btn = document.querySelector("#boton")
+
+        function ver(){
+            miDiv.innerHTML = `<img src=${ipt.value}>
+            `
+        }
+        btn.addEventListener("click", ver)
+    </script>
 </body>
 </html>

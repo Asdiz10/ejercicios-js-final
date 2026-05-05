@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-slate-500">
+
+    
+
+    <div class="flex items-center flex-col gap-5 mt-50">
+        <select class="w-50 h-5 bg-white" name="Samarreta1" id="samarreta">
+            <option class="text-center" value="">elige la camiseta</option>
+            <option value="samarreta-roja">Roja</option>
+            <option value="samarreta-verda">Verde</option>
+            <option value="samarreta-blava">Azul</option>
+        </select>
+
+        <select class="w-50  bg-white" name="Banyador2" id="banyador">
+            <option class="text-center" value="">Elige tu bañador</option>
+            <option value="bañador-verano">verano</option>
+            <option value="bañador-otoño">otoño</option>
+            <option value="bañador-invierno">invierno</option>
+        </select>
+
+        <select class="w-50  bg-white" name="Sandalies3" id="sandalies">
+            <option class="text-center" value="">Elige tus sandalias</option>
+            <option value="chancla1">primera</option>
+            <option value="chancla2">segunda</option>
+            <option value="chancla3">tercera</option>
+        </select>
+
+    </div>
+
+
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+
+    <script>
+        let camisa = document.querySelector("#samarreta")
+        let baño = document.querySelector("#banyador")
+        let chancla = document.querySelector("#sandalies")
+
+        let miDiv1 = document.querySelector("#div1")
+        let miDiv2 = document.querySelector("#div2")
+        let miDiv3 = document.querySelector("#div3")
+
+        function cambia(){
+            miDiv1.innerHTML = camisa.value
+            miDiv2.innerHTML = baño.value
+            miDiv3.innerHTML = chancla.value
+        }
+        camisa.addEventListener("change", cambia)
+        baño.addEventListener("change", cambia)
+        chancla.addEventListener("change", cambia)
+
+    </script>
+</body>
+</html>
