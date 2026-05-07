@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio8</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex justify-center">
+
+
+    <h1 id="suma" class=""></h1>
+    <br>
+    <div class="mt-50 gap-5 flex flex-col border justify-center p-20 bg-black">
+        <select class="bg-white text-black border-2 w-25 rounded text-center" name="Producto" id="select1">
+        <option value="">Producto</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <select class="bg-white border-2 w-25 rounded text-center" name="Envío" id="select2">
+        <option value="">Envío</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">8</option>
+        <option value="10">10</option>
+    </select>
+
+    <button class="w-20 text-black rounded bg-white" id="boton">Calcula</button>
+    </div>
+    
+
+    <script>
+        let s1 = document.querySelector("#select1")
+        let s2 = document.querySelector("#select2")
+        let h1 = document.querySelector("#suma")
+        const btn = document.querySelector("#boton")
+
+
+        function sumar(){
+            h1.innerHTML = Number(s1.value + s2.value)
+
+            h1.innerHTML = ` El total del producto es: 
+            ${Number(s1.value) + Number(s2.value)}
+            
+            `
+
+
+        }
+        btn.addEventListener("click", sumar)
+
+
+    </script>
+</body>
+</html>
