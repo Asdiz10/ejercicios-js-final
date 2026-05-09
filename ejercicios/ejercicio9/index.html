@@ -6,7 +6,51 @@
     <title>Ejercicio9</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="flex justify-center items-center flex-col">
+    <div><h1>REGISTRO DE TICKET</h1></div>
+    <div class="flex justify-center flex-col gap-1 mt-50 border p-10 items-center">
+        
+        <div class="flex justify-center flex-col gap-2">
+            <input class="text-black border rounded w-30" type="text" id="nombre">
+            <input class="text-black border rounded w-30" type="text" id="edad">
+        </div>
     
+    <select class="text-white bg-slate-500 rounded" name="" id="ticket">
+        <option value="">Elige tu ticket</option>
+        <option value="10">Normal</option>
+        <option value="30">VIP</option>
+    </select>
+    <button class="border rounded mt-10 w-full" id="boton">enviar</button>
+
+    <div class="border p-10 w-40 text-center text-black" id="resultado"></div>
+    </div>
+    
+
+    <script>
+        let name = document.querySelector("#nombre")
+        let years = document.querySelector("#edad")
+        let select = document.querySelector("#ticket")
+        const btn = document.querySelector("#boton")
+        let miDiv = document.querySelector("#resultado")
+
+        
+        function hola(){
+           if((years.value == "" || name.value == "" || select.value == "")){
+                miDiv.innerHTML = ` No has introducido ningún valor
+                `;
+                miDiv.style.backgroundColor = "yellow"   
+           }else if(years.value >= 18){
+                miDiv.innerHTML =` Ticket para ${name.value}, número de ticket ${select.value}.
+                `;
+                miDiv.style.backgroundColor = "green";
+
+           }else {
+                miDiv.innerHTML = `Lo siento ${name.value}, eres menor de edad
+                `;
+                miDiv.style.backgroundColor = "red";
+           }
+        }
+        btn.addEventListener("click", hola)
+    </script>
 </body>
 </html>
