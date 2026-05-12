@@ -1,6 +1,6 @@
 let alumno = [
   {
-    infodavid:
+    info:
       "David es un alumno creativo poco sociable, no le gusta la multitud, pero saca notas decentes. Le gusta la profesora de programación.",
 
     imagen:
@@ -10,7 +10,7 @@ let alumno = [
   },
 
   {
-    infojose:
+    info:
       "Charmander es un Pokémon bípedo de color naranja, originario de zonas calientes y montañosas. Se dice que desde su nacimiento, una llama arde en la punta de su cola como indicador de su salud y fuerza vital.",
 
     imagen:
@@ -30,7 +30,10 @@ const sl = document.querySelector("#sele")
 
 function hola(){
   if(sl.value == "DAVID"){
-    miDiv.innerHTML = ` ${alumno.infodavid}
+    miDiv.innerHTML = ` ${alumno[0].info}
+    `
+  } else if(sl.value == "JOSE"){
+      miDiv.innerHTML = ` ${alumno[1].info}
     `
   }
 }
