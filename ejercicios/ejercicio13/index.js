@@ -1,27 +1,24 @@
 let alumno = [
-{
-  infodavid:
-    "David es un alumno creativo poco sociable, no le gusta la multitud, pero saca notas decentes. Le gusta la profesora de programación ",
+  {
+    infodavid:
+      "David es un alumno creativo poco sociable, no le gusta la multitud, pero saca notas decentes. Le gusta la profesora de programación.",
 
-  imagen:"",
+    imagen:
+      "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/e40b6ea6361a1abe28f32e7910f63b66/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg",
 
-  NOTAS:
-    "",
-},
+    NOTAS: "SOCIALES: 6 | PROGRAMACIÓN: BESITOS 10 | MATES: 5",
+  },
 
-{
-    
-  infojose:
-    "Charmander es un Pokémon bípedo de color naranja, originario de zonas calientes y montañosas. Se dice que desde su nacimiento, una llama arde en la punta de su cola como indicador de su salud y fuerza vital.",
+  {
+    infojose:
+      "Charmander es un Pokémon bípedo de color naranja, originario de zonas calientes y montañosas. Se dice que desde su nacimiento, una llama arde en la punta de su cola como indicador de su salud y fuerza vital.",
 
-  imagen:
-    "https://static.wikia.nocookie.net/doblaje/images/d/de/Charmander_Anime.png/revision/latest/scale-to-width/360?cb=20250119211347&path-prefix=es",
+    imagen:
+      "https://img.magnific.com/foto-gratis/joven-hombre-barbudo-camisa-rayas_273609-5677.jpg?semt=ais_hybrid&w=740&q=80",
 
-  características:
-    "Tipo: Fuego | Habilidad: Mar Llamas | Debilidad: Agua, Tierra y Roca.",
-},
-
-
-]
+    NOTAS:
+      "TODO 10 EXCELENTE!!!",
+  },
+];
 
 
