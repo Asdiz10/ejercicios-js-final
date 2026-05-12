@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio11</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
-    <input type="text">
-    <input type="number">
-    <select name="" id="week">
-        <option value="10 euros">Lunes a Viernes</option>
-        <option value="5 euros">Miércoles - Día del Espectador</option>
-        <option value="12 euros">Fin de semana</option>
-    </select>
+<body class="flex justify-center items-center flex-col">
+    <div class="bg-orange-300 flex justify-center flex-col border items-center p-10 w-100 gap-2 mt-50">
+        <input class="text-center border rounded bg-white" id="ipt1" type="text">
+        <input class="text-center border rounded bg-white" id="ipt2" type="number">
+        <select class="text-center bg-slate-400 border rounded text-sm w-46" name="" id="week">
+            <option value="">h</option>
+            <option value="10 euros">Lunes a Viernes</option>
+            <option value="5 euros">Miércoles - Día del Espectador</option>
+            <option value="12 euros">Fin de semana</option>
+        </select>
+        <br>
+        <button class="bg-black border rounded text-sm p-2 text-white" id="boton">TOTAL</button>
+    </div>
+    
+    <br>
+    <div id="recibo"></div>
+
+    <script>
+        let ip1 = document.querySelector("#ipt1")
+        let ip2 = document.querySelector("#ipt2")
+        let semana = document.querySelector("#week")
+        const btn = document.querySelector("#boton")
+        let miDiv = document.querySelector("#recibo")
+
+
+        function hola(){
+            if(ip1.value == "" || ip2.value == ""){
+
+            }
+
+
+
+
+
+
+        }
+        btn.addEventListener("click", hola)
+    </script>
 </body>
 </html>
