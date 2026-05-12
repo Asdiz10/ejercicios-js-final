@@ -38,3 +38,14 @@ function hola(){
   }
 }
 b1.addEventListener("click", hola)
+
+function Notas(){
+  if(sl.value == "DAVID"){
+    miDiv.innerHTML = ` ${alumno[0].NOTAS}
+    `
+  } else if(sl.value == "JOSE"){
+    miDiv.innerHTML = ` ${alumno[1].NOTAS}
+    `
+  }
+}
+b3.addEventListener("click", Notas)
