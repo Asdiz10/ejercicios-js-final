@@ -21,4 +21,17 @@ let alumno = [
   },
 ];
 
+const b1 = document.querySelector("#boton1")
+const b2 = document.querySelector("#boton2")
+const b3 = document.querySelector("#boton3")
+let miDiv = document.querySelector("#datos")
+const sl = document.querySelector("#sele")
 
+
+function hola(){
+  if(sl.value == "DAVID"){
+    miDiv.innerHTML = ` ${alumno.infodavid}
+    `
+  }
+}
+b1.addEventListener("click", hola)
