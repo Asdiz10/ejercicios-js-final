@@ -6,8 +6,8 @@
     <title>Ejercicio10</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="flex justify-center">
-    <h1 id="h1"></h1>
+<body class="flex justify-center flex-col items-center gap-5">
+    
     <div class="bg-slate-500 flex justify-center flex-col items-center mt-50 border p-10 w-50">
         <div class="gap-5 flex flex-col">
             <input class="bg-white border w-20 rounded" id="i1" type="text">
@@ -22,7 +22,7 @@
     <button class="border rounded text-yellow-100 bg-black" id="boton">Calcular Precio</button>
 
     </div>
-    
+    <h1 class="" id="h1"></h1>
     <script>
         let title = document.querySelector("#h1")
         let ipt1 = document.querySelector("#i1")
@@ -44,7 +44,7 @@
                 `
                 document.body.style.backgroundColor = "green"
             } else{
-                title.innerHTML = ` Lo siento ${ipt1.value} eres menor de edad
+                title.innerHTML = ` Lo siento ${ipt1.value} no tienes la edad suficiente, este es el precio ${selec.value}
                 `
                 document.body.style.backgroundColor = "red"
             }
