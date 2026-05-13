@@ -39,6 +39,20 @@ function hola(){
 }
 b1.addEventListener("click", hola)
 
+
+function img(){
+  if(sl.value == "DAVID"){
+    miDiv.innerHTML = ` <img src="${alumno[0].imagen}">
+    `;
+  } else if(sl.value == "JOSE"){
+      miDiv.innerHTML = ` <img src="${alumno[1].imagen}">
+      `;
+  }
+}
+b2.addEventListener("click", img)
+
+
+
 function Notas(){
   if(sl.value == "DAVID"){
     miDiv.innerHTML = ` <p>${alumno[0].NOTAS}</p>
