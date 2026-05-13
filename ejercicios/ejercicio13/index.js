@@ -30,10 +30,10 @@ const sl = document.querySelector("#sele")
 
 function hola(){
   if(sl.value == "DAVID"){
-    miDiv.innerHTML = ` ${alumno[0].info}
+    miDiv.innerHTML = ` <p>${alumno[0].info}</p>
     `
   } else if(sl.value == "JOSE"){
-      miDiv.innerHTML = ` ${alumno[1].info}
+      miDiv.innerHTML = ` <p>${alumno[1].info}</p>
     `
   }
 }
@@ -41,10 +41,10 @@ b1.addEventListener("click", hola)
 
 function Notas(){
   if(sl.value == "DAVID"){
-    miDiv.innerHTML = ` ${alumno[0].NOTAS}
+    miDiv.innerHTML = ` <p>${alumno[0].NOTAS}</p>
     `
   } else if(sl.value == "JOSE"){
-    miDiv.innerHTML = ` ${alumno[1].NOTAS}
+    miDiv.innerHTML = ` <p>${alumno[1].NOTAS}</p>
     `
   }
 }
