@@ -25,9 +25,10 @@ let ipt = document.querySelector("#iptt")
 const btn = document.querySelector("#boton")
 
 function tienda(){
-    if(ipt.value > stock[0].cantidad && sl.value ){
-        miDiv.innerHTML = ` Lo sentimos no nos quedan más ratones en stock
-        `
-    }
+   if(ipt.value == 0){
+    miDiv.innerHTML = "No se ha introducido nada"
+   } else if(ipt.value > stock[i].cantidad){
+    miDiv.innerHTML = "No quedan en stock"
+   }
 }
 btn.addEventListener("click", tienda)
