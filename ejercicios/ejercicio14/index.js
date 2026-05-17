@@ -1,20 +1,20 @@
 let stock = [
   {
-    Producto0: "Mouse",
-    precio: "10",
-    cantidad: "5",
+    Nombre: "Mouse",
+    precio: 10,
+    cantidad: 5,
   },
 
   {
-    Producto0: "Teclado",
-    precio: "20",
-    cantidad: "2",
+    Nombre: "Teclado",
+    precio: 20,
+    cantidad: 2,
   },
 
   {
-    Producto0: "Monitor",
-    precio: "100",
-    cantidad: "0",
+    Nombre: "Monitor",
+    precio: 100,
+    cantidad: 10,
   },
 ];
 
@@ -27,8 +27,11 @@ const btn = document.querySelector("#boton")
 function tienda(){
    if(ipt.value == 0){
     miDiv.innerHTML = "No se ha introducido nada"
-   } else if(ipt.value > stock[i].cantidad){
+   } else if(ipt.value > stock[sl.value].cantidad){
     miDiv.innerHTML = "No quedan en stock"
+   } else{
+      miDiv.innerHTML = ` Este es el total ${ipt.value*stock[sl.value].precio} €
+      `
    }
 }
 btn.addEventListener("click", tienda)
