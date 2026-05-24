@@ -24,3 +24,16 @@ function hola1(){
     miDiv1.classList.add("resaltado")
 }
 btn3.addEventListener("click", hola1)
+
+
+const btn4 = document.querySelector("#boton4")
+let divv = document.querySelector("#div2")
+let selec = document.querySelector("#sele")
+let ipt1 = document.querySelector("#input")
+
+function hola2(){
+    divv.innerHTML = ` " ${ipt1.value} - ${selec.value} "
+    `
+
+}
+btn4.addEventListener("click", hola2)
