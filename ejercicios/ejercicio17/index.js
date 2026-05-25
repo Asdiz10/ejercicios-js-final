@@ -38,6 +38,7 @@ function mostrarPelis(){
             <h3>Título: ${cartelera[i].titulo}</h3>
             <p>Director: ${cartelera[i].director}</p>
             <p>Año: ${cartelera[i].año}</p>
+            </div>
 
 
         `
