@@ -30,7 +30,7 @@ function mostrarPelis(){
 
     cartelera.push(pelinueva)
 
-
+    
     miDiv1.innerHTML = " "
     for(let i = 0; i < cartelera.length; i++){
         miDiv1.innerHTML +=`
