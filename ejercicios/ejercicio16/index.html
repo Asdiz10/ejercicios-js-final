@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR</title>
+    <style>
+        .tarjeta{
+        border: 2px solid #333;       /* El borde para separar cada producto */
+        padding: 15px;                 /* Espacio dentro de la tarjeta para que el texto no toque el borde */
+        margin: 5px;                  /* Espacio por fuera para que las tarjetas no se peguen entre sí */
+        border-radius: 10px;           /* Bordes redondeados (queda más profesional) */
+        width: 250px;                  /* Un ancho fijo para que todas las tarjetas midan lo mismo */
+        background-color: #f9f9f9;     /* Un color de fondo suave */
+        display: inline-block;         /* ¡IMPORTANTE! Para que se pongan una al lado de otra */
+        vertical-align: top;           /* Para que si una es más alta que otra, se alineen por arriba */
+        box-shadow: 2px 2px 5px grey;
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-center items-center">
+
+    <div class="flex flex-col justify-center items-center mt-50 border rounded p-10 gap-2">
+        <div class="" id="div1"></div>
+        <button id="boton1" class="border rounded">ver producto</button>
+    </div>
+
+
+    <div class="flex flex-col justify-center items-center mt-50 border rounded p-10 gap-2">
+        <input placeholder="Marca" class="border rounded" id="marca" type="text">
+        <input placeholder="Modelo" class="border rounded" id="modelo" type="text">
+        <input placeholder="Precio" class="border rounded" id="precio" type="text">
+    </div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js"></script>
+</body>
+</html>
