@@ -60,7 +60,7 @@ const btn5 = document.querySelector("#boton5")
 let container = document.querySelector("#contenedor")
 
 function pintarjuegos(){
-    container.innerHTML="";
+    container.innerHTML=""; 
     for (let i = 0; i < videojuegos.length; i++){
         
         container.innerHTML += `
