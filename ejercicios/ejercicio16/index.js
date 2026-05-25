@@ -23,5 +23,27 @@ function mostrarZapas(){
             </div>
         `
     }
+
+    
 }
 btn1.addEventListener("click", mostrarZapas)
+
+
+
+let ma = document.querySelector("#marca").value
+let mo = document.querySelector("#modelo").value
+let pre = document.querySelector("#precio").value
+
+
+function añadir(){
+    let neuvas = {
+        marca: ma.value,
+        modelo: mo.value,
+        precio: pre.value,
+    };
+
+    zapatillas.push(neuvas)
+
+    
+}
+btn1.addEventListener("click", añadir)
