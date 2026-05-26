@@ -47,3 +47,7 @@ function añadir(){
     
 }
 btn1.addEventListener("click", añadir)
+
+
+
+
