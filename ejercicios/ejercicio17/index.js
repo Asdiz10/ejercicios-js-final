@@ -11,7 +11,7 @@ let cartelera = [
     año: 2009,
   },
 
-  {
+  {   
     titulo: "Seven",
     director: "David fincher",
     año: 1995,
